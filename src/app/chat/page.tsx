@@ -56,22 +56,25 @@ export default function ChatPage() {
         content: response.data.message || JSON.stringify(response.data, null, 2)
       };
       addMessage(aiMessage);
-    } catch (error: any) {
+    } catch (error: unknown) {
       // 에러 처리
+      const errorMessage = error instanceof Error ? error.message : '알 수 없는 오류';
+      const axiosError = error as { response?: { data?: unknown; status?: number }; config?: { url?: string } };
+      
       console.error('API 호출 에러:', error);
       console.error('에러 상세:', {
-        message: error.message,
-        response: error.response?.data,
-        status: error.response?.status,
-        url: error.config?.url
+        message: errorMessage,
+        response: axiosError.response?.data,
+        status: axiosError.response?.status,
+        url: axiosError.config?.url
       });
       
-      const errorMessage: Message = {
+      const errorMsg: Message = {
         id: Date.now() + 1,
         role: 'assistant',
-        content: `서버와의 연결에 실패했습니다. 서버가 실행 중인지 확인해주세요.\n에러: ${error.message || '알 수 없는 오류'}`
+        content: `서버와의 연결에 실패했습니다. 서버가 실행 중인지 확인해주세요.\n에러: ${errorMessage}`
       };
-      addMessage(errorMessage);
+      addMessage(errorMsg);
     }
   };
 

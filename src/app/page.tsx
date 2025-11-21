@@ -29,7 +29,7 @@ export default function HomePage() {
     { id: 5, type: 'ai', text: '감사합니다! S2-5 문단이 우측에 생성되었습니다.\n다음 질문: Scope 1·2 배출량의 기준연도는 언제인가요?' },
   ]);
 
-  const [paragraphs, setParagraphs] = useState<Paragraph[]>([
+  const [paragraphs] = useState<Paragraph[]>([
     {
       id: 's2-5',
       title: 'IFRS S2-5: Governance',
@@ -227,7 +227,7 @@ export default function HomePage() {
                 <div className="p-16 space-y-20">
                   <section>
                     <h2 className="text-4xl font-bold border-b-4 border-blue-600 inline-block pb-2">1. Governance</h2>
-                    <p className="mt-8 text-xl text-gray-700 leading-relaxed">당사는 이사회 산하 '지속가능경영위원회'를 통해 기후 리스크를 체계적으로 감독하고 있습니다...</p>
+                    <p className="mt-8 text-xl text-gray-700 leading-relaxed">당사는 이사회 산하 &apos;지속가능경영위원회&apos;를 통해 기후 리스크를 체계적으로 감독하고 있습니다...</p>
                   </section>
                   {/* 더 많은 섹션 추가 가능 */}
                 </div>

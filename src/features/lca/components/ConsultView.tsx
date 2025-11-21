@@ -73,7 +73,7 @@ export function ConsultView() {
 
           <ChatBubble type="user">
             <p>
-              이사회 산하의 '지속가능경영위원회'가 분기별로 감독합니다.
+              이사회 산하의 &apos;지속가능경영위원회&apos;가 분기별로 감독합니다.
             </p>
           </ChatBubble>
 
@@ -125,7 +125,7 @@ export function ConsultView() {
               <p>
                 당사는 기후 관련 리스크 및 기회에 대한 효과적인 감독을 위해{' '}
                 <span className="highlight-source">
-                  이사회 산하 '지속가능경영위원회'
+                  이사회 산하 &apos;지속가능경영위원회&apos;
                   <span className="tooltip">
                     근거: 사용자 입력 (Q:감독 주체)
                   </span>
@@ -143,7 +143,7 @@ export function ConsultView() {
               <div className="bg-blue-50 border border-blue-200 p-3 rounded-md text-sm">
                 <strong>AI 코멘트 (흐름 5.1 검증):</strong>{' '}
                 <span className="text-blue-700">
-                  기준서 충족. '위원회'의 구체적인 역할(예: 성과 측정, 보상
+                  기준서 충족. &apos;위원회&apos;의 구체적인 역할(예: 성과 측정, 보상
                   연계)을 추가하면 더 좋습니다.
                 </span>
               </div>
@@ -170,7 +170,7 @@ export function ConsultView() {
               <div className="bg-red-50 border border-red-200 p-3 rounded-md text-sm">
                 <strong>AI 코멘트 (흐름 5.1 검증):</strong>{' '}
                 <span className="text-red-700">
-                  정량요소 부족. 'Scope 1·2 데이터의 기준연도'를 왼쪽
+                  정량요소 부족. &apos;Scope 1·2 데이터의 기준연도&apos;를 왼쪽
                   채팅창에 입력해주세요. (흐름 4.1-6)
                 </span>
               </div>

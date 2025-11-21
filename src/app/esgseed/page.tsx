@@ -30,7 +30,7 @@ export default function ReportPage() {
     { id: 5, type: 'ai', text: '감사합니다! S2-5 문단이 우측에 생성되었습니다.\n다음 질문: Scope 1·2 배출량의 기준연도는 언제인가요?' },
   ]);
 
-  const [paragraphs, setParagraphs] = useState<Paragraph[]>([
+  const [paragraphs] = useState<Paragraph[]>([
     {
       id: 's2-5',
       title: 'IFRS S2-5: Governance',

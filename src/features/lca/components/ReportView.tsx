@@ -18,7 +18,7 @@ export function ReportView() {
           <div className="prose prose-lg max-w-none text-gray-700 space-y-4">
             <p>
               당사는 기후 관련 리스크 및 기회에 대한 효과적인 감독을 위해
-              이사회 산하 '지속가능경영위원회'를 설치하여 운영하고 있습니다.
+              이사회 산하 &apos;지속가능경영위원회&apos;를 설치하여 운영하고 있습니다.
               위원회는 분기별로 기후 관련 주요 안건을 보고받고, 관련 전략 및
               성과를 감독합니다.
             </p>
